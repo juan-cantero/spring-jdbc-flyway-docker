@@ -3,9 +3,11 @@ app:
     main:
       driver-class-name: org.postgresql.Driver
       jdbc-url: jdbc:postgresql://localhost:5432/amigoscode
-      password: 'password'
-      pool-size: 30
       username: amigoscode
+      password: "pass"
+      pool-size: 30
+spring:
+  datasource.type: com.zaxxer.hikari.HikariDataSource
 
 server:
   error:
